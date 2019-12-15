@@ -7,9 +7,13 @@
 #include <unistd.h>
 #include <sys/types.h>
 
-#define MAX_LINE 1024
 #define TRUE 1
 #define FALSE 0
 
+#define MAX_LINE 1024
+
+#define ESC 27
+#define CR 13
+#define DEL 127
 
 #endif // !COMMON_H
