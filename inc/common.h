@@ -16,4 +16,13 @@
 #define CR 13
 #define DEL 127
 
+struct Node *head; // global variable - pointer to head node
+
+typedef struct Node
+{
+    char command[1024];
+    struct Node *next;
+    struct Node *prev;
+} Node;
+
 #endif // !COMMON_H
