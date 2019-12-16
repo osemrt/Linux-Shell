@@ -61,10 +61,10 @@ int getCommandFromUser(char input[])
             input[i] = '\0';
             printf("\b \b"); // deletes M
             printf("\b \b"); // deletes ^
-
-            printf("\n");
+            
+            printf("\r\n");
             clearInputLine();
-            printf("read:%s...\n", input);
+            //printf("read:%s...\n", input);
             clearInputLine();
             i = 0;
             flag = TRUE;
@@ -98,4 +98,13 @@ void clearInputLine()
     /* \33[2K erases the entire line your cursor is currently on*/
     /* \r brings your cursor to the beginning of the line */
     printf("\33[2K\r");
+}
+
+void deleteChar(int i)
+{
+    if (i > 0)
+    {
+        printf("\b \b");
+        i--;
+    }
 }
