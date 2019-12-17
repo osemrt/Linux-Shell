@@ -8,7 +8,7 @@ void welcomeScreen();
 void printPrompt();
 void initialize();
 
-int getCommandFromUser(char input[]);
+void getCommandFromUser(char input[]);
 void disableBuffering();
 void enableBuffering();
 void clearInputLine();

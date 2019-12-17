@@ -53,7 +53,7 @@ void Print()
     printf("Forward: ");
     while (temp != NULL)
     {
-        printf("'%s' ", temp->command);
+        printf("%s ", temp->command);
         temp = temp->next;
     }
     printf("\n");
@@ -63,6 +63,8 @@ void Print()
 void ReversePrint()
 {
     struct Node *temp = head;
+    int i = 0;
+
     if (temp == NULL)
         return; // empty list, exit
     // Going to last Node
@@ -71,19 +73,18 @@ void ReversePrint()
         temp = temp->next;
     }
     // Traversing backward using prev pointer
-    printf("Reverse: ");
     while (temp != NULL)
     {
-        printf("%s ", temp->command);
+        i++;
+        printf("%d %s\n", i, temp->command);
         temp = temp->prev;
     }
-    printf("\n");
 }
 
-//returns the last command
+//Returns the last history command
 struct Node *goBack(struct Node *p)
 {
-    if (p == head)
+    if (p == head && p->next != NULL)
     {
         return head->next;
     }
@@ -97,7 +98,7 @@ struct Node *goBack(struct Node *p)
     }
 }
 
-
+//Gets the next new command in the left of p from the linked list
 struct Node *goForward(struct Node *p)
 {
     if (p == head)

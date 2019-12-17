@@ -15,6 +15,11 @@ int executeCommand(char *args[], char *envp[])
     {
         exit(EXIT_SUCCESS);
     }
+    else if (strcmp(command, "history") == 0)
+    {
+        ReversePrint();
+        return;
+    }
     else if (strcmp(command, "cd") == 0)
     {
         chdir(args[1]);
@@ -55,7 +60,7 @@ int executeCommand(char *args[], char *envp[])
                 i++;
             }
             printf("\n\n");
-            
+
             exit(EXIT_FAILURE);
         }
     }
