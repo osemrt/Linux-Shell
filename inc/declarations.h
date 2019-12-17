@@ -12,7 +12,6 @@ void getCommandFromUser(char input[]);
 void disableBuffering();
 void enableBuffering();
 void clearInputLine();
-void deleteChar(int i);
 
 void parseCommand(char input[], char *args[]);
 void executeCommand(char *args[], char *envp[]);
