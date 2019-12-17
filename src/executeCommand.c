@@ -1,6 +1,6 @@
 #include "declarations.h"
 
-int executeCommand(char *args[], char *envp[])
+void executeCommand(char *args[], char *envp[])
 {
     int result; /* execution is successfull or not */
     char *command = args[0];
@@ -65,5 +65,4 @@ int executeCommand(char *args[], char *envp[])
         }
     }
 
-    return result;
 }

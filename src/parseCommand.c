@@ -38,11 +38,6 @@ void parseCommand(char input[], char *args[])
             input[i] = '\0';
             args[ct] = NULL; /* no more arguments to this command */
             break;
-
-            // case '&':
-            //     *background = 1;
-            //     input[i] = '\0';
-            //     break;
         default: /* some other character */
             if (start == -1)
                 start = i;

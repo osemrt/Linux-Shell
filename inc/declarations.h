@@ -15,12 +15,11 @@ void clearInputLine();
 void deleteChar(int i);
 
 void parseCommand(char input[], char *args[]);
-int executeCommand(char *args[], char *envp[]);
+void executeCommand(char *args[], char *envp[]);
 
 struct Node *GetNewNode(char command[]);
 void InsertAtHead(char command[]);
 void InsertAtTail(char command[]);
-void Print();
 void ReversePrint();
 struct Node *goBack(struct Node *p);
 struct Node *goForward(struct Node *p);
