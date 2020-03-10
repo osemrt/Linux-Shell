@@ -3,7 +3,7 @@ Linux-Shell
 =====
 Its a C program which will act like a linux shell. It will have a prompt and will accept the following command and execute programs themselves and accept command line arguments. The shell will load these commands through the combination of fork+exec functions and execute them.
 
-![enter image description here](https://drive.google.com/uc?id=1PBPY-wWquBcxZc-Hwg4RFAObSdhCttJ5)
+![enter image description here](https://github.com/image-assets/gif/blob/master/Linux-Shell.gif)
 
 Feautres
 -----
